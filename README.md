@@ -1,18 +1,18 @@
 # Route Planning Project
 
-This repo contains the starter code for the Route Planning project.
+This project shows how to calculate the shortest path between two points (coordinates) in a map using the A* search algorithm on an Open Street Map.
 
-<img src="map.png" width="600" height="450" />
+<img src="images/map.png" width="600" height="450" />
 
 ## Cloning
 
 When cloning this project, be sure to use the `--recurse-submodules` flag. Using HTTPS:
 ```
-git clone https://github.com/udacity/CppND-Route-Planning-Project.git --recurse-submodules
+git clone https://github.com/tomasdelclaux/OpenStreetMaps_C-.git --recurse-submodules
 ```
 or with SSH:
 ```
-git clone git@github.com:udacity/CppND-Route-Planning-Project.git --recurse-submodules
+git clone https://github.com/tomasdelclaux/OpenStreetMaps_C-.git --recurse-submodules
 ```
 
 ## Dependencies for Running Locally
@@ -59,3 +59,20 @@ The testing executable is also placed in the `build` directory. From within `bui
 ./test
 ```
 
+## Example
+
+Try and downloading an extract of a city or region from:
+
+https://www.openstreetmap.org/export#map=18/40.41040/-3.70688
+
+In this case, the example is an export of the Madrid Downtown Area.
+
+Then run:
+
+```
+./OSM_A_star_search -f ../MadridDowntown.osm
+```
+
+And insert point coordinates ((5,67), (89,45))
+
+<img src="images/Madrid.png" width="600" height="450" />
